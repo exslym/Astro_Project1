@@ -11,8 +11,10 @@
 		"deploy": "gh-pages -d build"
 	},
 	"dependencies": {
+		"@astrojs/preact": "^2.1.0",
 		"@astrojs/tailwind": "^3.1.0",
 		"astro": "^2.1.2",
+		"preact": "^10.13.1",
 		"tailwindcss": "^3.2.7"
 	},
 	"devDependencies": {
