@@ -7,4 +7,5 @@ import preact from '@astrojs/preact';
 export default defineConfig({
 	integrations: [tailwind(), preact()],
 	site: 'https://exslym.github.io',
+	base: '/astro_project1',
 });
