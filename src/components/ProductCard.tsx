@@ -14,10 +14,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 			<h2 className='text-lg font-bold'>{product.title}</h2>
 			<p className='font-bold pt-1 text-gray-600'>${product.price}</p>
 			<div>
-				<a
-					className='text-lg font-bold hover:text-sky-600'
-					href={`/astro_project1/product/${product.id}`}
-				>
+				<a className='text-lg font-bold hover:text-sky-600' href={`/product/${product.id}`}>
 					Open product
 				</a>
 			</div>
