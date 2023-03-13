@@ -2,15 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 
 const date = new Date();
-const color = 'red';
 ---
 
 <Layout title='Index Page'>
-	<h1>Main Page</h1>
-
-	<p style={{ color: color }}>{date.toDateString()}</p>
-
-	<div>
-		<a href='/about'>About Page</a>
-	</div>
+	<h1 class='text-2xl font-bold'>Main Page</h1>
+	<p class='text-lg text-red-500 font-bold'>{date.toDateString()}</p>
 </Layout>
