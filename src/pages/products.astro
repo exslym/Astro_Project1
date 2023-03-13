@@ -1,5 +1,6 @@
 ---
 import ProductCard from '../components/ProductCard';
+import Visible from '../components/Visible';
 import Layout from '../layouts/Layout.astro';
 import { IProduct } from '../types';
 
@@ -12,4 +13,5 @@ const products = (await response.json()) as IProduct[];
 	<div class='pt-2'>
 		{products.map(prod => <ProductCard client:load product={prod} />)}
 	</div>
+	<Visible client:visible />
 </Layout>
