@@ -22,6 +22,6 @@ const { product } = Astro.props as Props;
 
 <Layout title={`Product ${id}`}>
 	<h1 class='pt-2 text-lg font-bold text-center'>{product.title}</h1>
-	<img class='m-auto mt-4 max-w-lg' src={product.image} alt='image' />
-	<p class='text-lg mt-4'>{product.description}</p>
+	<img class='m-auto mt-4 w-1/2 max-w-lg' src={product.image} alt='image' />
+	<p class='text-lg m-auto mt-4 max-w-lg first-letter:pl-4'>{product.description}</p>
 </Layout>
