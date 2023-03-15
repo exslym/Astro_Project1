@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
 import { IProduct } from '../types';
+import { baseURL } from '../pages/index.astro';
 
 interface ProductCardProps {
 	product: IProduct;
@@ -16,7 +17,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 			<div>
 				<a
 					className='text-lg font-bold hover:text-sky-600'
-					href={`/astro_project1/product/${product.id}`}
+					href={`${baseURL}/product/${product.id}`}
 				>
 					Open product
 				</a>
